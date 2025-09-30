@@ -21,7 +21,7 @@ app.get('/ufs/:iduf', (req, res) => {
     }
 
     const uf = buscarUfsPorId(idUf);
-    if (uf) {
+    if (!uf) {
         return res.status(404).json({ erro: "UF não encontrada" });
     }
 

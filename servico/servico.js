@@ -4,8 +4,8 @@ export function buscarUfs() {
     return colecaoUf;
 }
 
-export function buscarUfsPorId(id) {
-    return colecaoUf.find(uf => uf.id === id);
+export function buscarUfsPorId(idUf) {
+    return colecaoUf.find(uf => uf.id === idUf);
 }
 
 export function buscarUfsPorNome(nome) {
